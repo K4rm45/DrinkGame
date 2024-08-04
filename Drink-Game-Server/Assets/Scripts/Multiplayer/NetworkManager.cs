@@ -4,7 +4,14 @@ using Riptide.Utils;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public enum ServerToClientMSG : ushort
+{
+    ApproveLogin,
+}
+public enum ClientToServertMSG : ushort
+{
+    RequestLogin,
+}
 public class NetworkManager : Singleton<NetworkManager> 
 {
     protected override void Awake()
